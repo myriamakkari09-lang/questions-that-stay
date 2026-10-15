@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4efe5">
+  <meta name="description" content="A personal statement by Myriam Akkari, 12C, about economics, literature, cinema, and the questions that shape how I understand the world.">
+  <title>Myriam Akkari 12C — Personal Statement</title>
+  <style>
+    :root {
+      --paper: #f4efe5;
+      --paper-deep: #e9e0d1;
+      --ink: #28231f;
+      --muted: #6f675f;
+      --wine: #712f3d;
+      --wine-dark: #4f202e;
+      --green: #35473d;
+      --line: rgba(40,35,31,.19);
+      --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+      --sans: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+      --mono: "Courier New", monospace;
+      --page: 1160px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
+    body {
+      margin: 0; color: var(--ink); background-color: var(--paper);
+      background-image: radial-gradient(rgba(59,44,31,.09) .55px, transparent .7px);
+      background-size: 5px 5px; font-family: var(--sans); line-height: 1.65;
+    }
+    a { color: inherit; }
+    .page { width: min(var(--page), calc(100% - 3rem)); margin-inline: auto; }
+    .topbar { position: sticky; top: 0; z-index: 10; background: rgba(244,239,229,.93); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    .nav { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+    .wordmark { font: 600 .78rem var(--mono); letter-spacing: .11em; text-transform: uppercase; text-decoration: none; }
+    .navlinks { display: flex; gap: clamp(.75rem, 2.2vw, 1.8rem); align-items: center; }
+    .navlinks a { font: .7rem var(--mono); letter-spacing: .04em; text-decoration: none; color: var(--muted); }
+    .navlinks a:hover, .navlinks a:focus-visible { color: var(--wine); text-decoration: underline; text-underline-offset: 4px; }
+    .hero { padding: clamp(4.5rem, 11vw, 9rem) 0 5rem; border-bottom: 1px solid var(--line); position: relative; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(2.5rem, 8vw, 7rem); align-items: center; }
+    .eyebrow, .kicker { font: .68rem var(--mono); letter-spacing: .15em; text-transform: uppercase; color: var(--wine); }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 760px; font: 400 clamp(3.4rem, 8.5vw, 7.4rem)/.91 var(--serif); letter-spacing: -.065em; margin: 1.15rem 0 1.5rem; }
+    h1 em { color: var(--wine); font-weight: 400; }
+    .hero-deck { max-width: 520px; font: 1.07rem/1.7 var(--serif); color: #514940; }
+    .hero-note { border-left: 2px solid var(--wine); padding: .2rem 0 .2rem 1rem; margin-top: 2rem; font: italic .92rem/1.6 var(--serif); color: var(--muted); }
+    .scene { background: #282724; min-height: 340px; aspect-ratio: 1.12; position: relative; overflow: hidden; color: var(--paper); box-shadow: 14px 15px 0 var(--paper-deep); }
+    .scene:before { content: ""; position: absolute; inset: 0; opacity: .36; background: repeating-linear-gradient(0deg, transparent 0 41px, rgba(255,255,255,.14) 42px 43px), linear-gradient(90deg, #1e201e 0%, #313230 49%, #242322 50%, #171817 100%); }
+    .scene:after { content: ""; position: absolute; inset: 0; background: linear-gradient(132deg, transparent 47%, rgba(244,239,229,.08) 48%, transparent 72%), radial-gradient(ellipse at 77% 13%, rgba(217,190,152,.16), transparent 45%); pointer-events: none; }
+    .scene-label { position: absolute; top: 1rem; left: 1rem; z-index: 2; font: .57rem var(--mono); letter-spacing: .12em; text-transform: uppercase; color: #e6ddd0; }
+    .road { position: absolute; inset: 0; display: flex; align-items: end; justify-content: center; padding: 0 8% 11%; }
+    .road-line { position: absolute; width: 35%; height: 1px; bottom: 13%; background: rgba(245,238,225,.46); transform: rotate(-4deg); }
+    .car { position: absolute; width: 54%; height: 25%; left: 19%; bottom: 31%; border: 1px solid rgba(230,220,205,.8); border-radius: 48% 55% 8% 12% / 45% 48% 15% 18%; background: linear-gradient(115deg, rgba(113,47,61,.78), rgba(75,36,43,.93)); box-shadow: 0 19px 25px rgba(0,0,0,.34); transform: skewX(-8deg); }
+    .car:before { content: ""; position: absolute; width: 51%; height: 54%; left: 22%; top: -35%; border: 1px solid rgba(230,220,205,.72); border-bottom: 0; border-radius: 60% 45% 0 0; background: linear-gradient(135deg, rgba(155,166,159,.34), rgba(28,30,29,.88)); }
+    .car:after { content: ""; position: absolute; width: 16px; height: 16px; border-radius: 50%; background: #181817; border: 2px solid #8f8170; left: 18%; bottom: -8px; box-shadow: 165px 0 0 -2px #181817, 165px 0 0 0 #8f8170; }
+    .figures { position: absolute; right: 12%; bottom: 14%; display: flex; gap: 1rem; align-items: end; }
+    .figure { width: 7px; height: 58px; position: relative; background: #b9aa96; opacity: .85; border-radius: 7px 7px 1px 1px; }
+    .figure:nth-child(2) { height: 48px; background: #9e927f; }
+    .figure:nth-child(3) { height: 63px; background: #c4b49e; }
+    .figure:before { content: ""; position: absolute; left: -3px; top: -12px; width: 13px; height: 13px; border-radius: 50%; background: inherit; }
+    .water { position: absolute; height: 16px; width: 11px; border: 1px solid #d5ccbd; left: -12px; top: 22px; transform: rotate(8deg); }
+    .gum { position: absolute; width: 10px; height: 7px; border: 1px solid #d5ccbd; right: -15px; top: 32px; transform: rotate(-9deg); }
+    .caption { position: absolute; bottom: 1rem; left: 1rem; z-index: 2; font: .61rem var(--mono); letter-spacing: .04em; color: #eee6d9; }
+    .hero-bottom { display: flex; justify-content: space-between; align-items: center; margin-top: 4rem; color: var(--muted); font: .66rem var(--mono); letter-spacing: .09em; text-transform: uppercase; }
+    .scroll-cue { display: flex; align-items: center; gap: .7rem; }
+    .scroll-cue:before { content: ""; width: 42px; height: 1px; background: var(--wine); }
+    section { padding: clamp(4.2rem, 8vw, 7rem) 0; border-bottom: 1px solid var(--line); }
+    .section-head { display: grid; grid-template-columns: 130px 1fr; gap: 1.5rem; margin-bottom: 2.5rem; align-items: baseline; }
+    .section-no { color: var(--wine); font: .7rem var(--mono); letter-spacing: .1em; }
+    h2 { font: 400 clamp(2.5rem, 5.4vw, 4.6rem)/.98 var(--serif); letter-spacing: -.05em; margin-bottom: 0; max-width: 760px; }
+    .story-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(2rem, 8vw, 8rem); align-items: start; }
+    .body-copy { max-width: 650px; color: #49433d; font: 1.05rem/1.85 var(--serif); }
+    .body-copy strong { color: var(--ink); font-weight: 600; }
+    .pullquote { color: var(--wine); font: italic clamp(1.8rem, 3vw, 2.6rem)/1.2 var(--serif); letter-spacing: -.03em; padding: 1.5rem 0 1.5rem 1.5rem; border-left: 1px solid var(--wine); }
+    .marginalia { margin-top: 2rem; font: .67rem/1.8 var(--mono); color: var(--muted); letter-spacing: .04em; }
+    .reading { background: var(--wine-dark); color: var(--paper); padding: clamp(2rem, 5vw, 4rem); display: grid; grid-template-columns: .7fr 1.3fr; gap: clamp(2rem, 6vw, 5rem); position: relative; overflow: hidden; }
+    .reading:after { content: "“"; position: absolute; right: 2rem; bottom: -6.8rem; font: 23rem/1 var(--serif); color: rgba(244,239,229,.07); }
+    .reading .kicker { color: #d7b8a9; }
+    .book-title { font: italic 2rem/1.12 var(--serif); margin: .6rem 0 1rem; }
+    .book-meta { font: .65rem var(--mono); letter-spacing: .08em; text-transform: uppercase; color: #d6c5b4; }
+    .reading-copy { position: relative; z-index: 1; font: 1.02rem/1.8 var(--serif); color: #f1e8dc; max-width: 650px; }
+    .reading-copy p:last-child { margin-bottom: 0; }
+    .annotation { margin-top: 1.7rem; font: italic .83rem var(--serif); color: #cfb29d; transform: rotate(-1.5deg); }
+    .films-intro { max-width: 670px; color: var(--muted); font: 1.06rem/1.75 var(--serif); margin: 0 0 2.5rem 150px; }
+    .film-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    .film-card { border: 1px solid var(--line); background: rgba(255,255,255,.18); padding: 1rem; }
+    .film-image { min-height: 245px; position: relative; overflow: hidden; display: grid; place-items: center; isolation: isolate; background: #29332f; color: var(--paper); }
+    .film-image:before { content: ""; position: absolute; inset: 9px 0; opacity: .45; border-block: 1px solid #e5d7c2; }
+    .film-image:after { content: ""; position: absolute; inset: 0; z-index: -1; background: repeating-linear-gradient(90deg, transparent 0 20px, rgba(244,239,229,.10) 21px 27px, transparent 28px 45px); }
+    .parasite { background: radial-gradient(ellipse at 72% 23%, rgba(205,177,115,.4), transparent 22%), linear-gradient(130deg, #343d36 0 48%, #202823 48%); }
+    .parasite .stairs { position: absolute; left: 12%; bottom: 17%; width: 72%; height: 48%; background: repeating-linear-gradient(0deg, #a49271 0 2px, transparent 2px 23px); clip-path: polygon(0 100%, 0 88%, 24% 88%, 24% 69%, 49% 69%, 49% 48%, 74% 48%, 74% 27%, 100% 27%, 100% 100%); opacity: .8; }
+    .parasite .light-window { position: absolute; right: 14%; top: 24%; height: 57px; width: 85px; border: 1px solid rgba(244,239,229,.7); background: linear-gradient(135deg, rgba(223,195,136,.42), rgba(244,239,229,.04)); box-shadow: 0 0 28px rgba(223,195,136,.2); }
+    .aftersun { background: radial-gradient(ellipse at 50% 44%, rgba(226,185,126,.7), transparent 23%), linear-gradient(180deg, #4b6162 0 54%, #7d897f 55% 57%, #4d6b6a 58%); }
+    .aftersun .sun { position: absolute; width: 100px; height: 100px; border: 1px solid rgba(245,225,193,.6); border-radius: 50%; box-shadow: 0 0 50px rgba(241,204,145,.28), inset 0 0 26px rgba(241,204,145,.2); }
+    .aftersun .horizon { position: absolute; height: 1px; left: 0; right: 0; top: 56%; background: rgba(241,232,211,.55); }
+    .film-frame { position: absolute; inset: 15px; border: 1px solid rgba(244,239,229,.32); }
+    .frame-index { position: absolute; top: 1.2rem; left: 1.35rem; color: #f5ebdf; font: .55rem var(--mono); letter-spacing: .14em; text-transform: uppercase; }
+    .film-caption { position: absolute; left: 1.35rem; right: 1.35rem; bottom: 1.25rem; color: #f5ebdf; font: .68rem var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+    .film-title { font: italic 2rem/1.1 var(--serif); margin: 1.35rem 0 .2rem; }
+    .film-year { font: .63rem var(--mono); letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
+    .film-copy { color: #4e4740; font: .94rem/1.75 var(--serif); margin: 1rem 0 .7rem; }
+    .film-link { color: var(--wine); font: italic .86rem var(--serif); }
+    .economics { background: #e7e1d5; }
+    .econ-lead { max-width: 750px; font: 1.15rem/1.75 var(--serif); color: #4c453d; margin: 0 0 3rem 150px; }
+    .econ-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+    .econ-diagram { position: relative; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 2.6rem 3.7rem; min-height: 320px; padding: 1.2rem; }
+    .node { z-index: 1; width: 126px; height: 126px; border-radius: 50%; border: 1px solid rgba(53,71,61,.5); background: rgba(244,239,229,.88); display: grid; place-content: center; text-align: center; padding: 1rem; font: .78rem/1.35 var(--serif); color: var(--green); justify-self: center; align-self: center; }
+    .node small { display: block; font: .55rem var(--mono); letter-spacing: .09em; text-transform: uppercase; color: var(--muted); margin-top: .45rem; }
+    .node.household { border-color: rgba(113,47,61,.6); color: var(--wine); }
+    .diagram-lines { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .diagram-lines path { fill: none; stroke: rgba(53,71,61,.45); stroke-width: 1; stroke-dasharray: 3 5; }
+    .econ-copy { max-width: 560px; color: #49433d; font: 1rem/1.8 var(--serif); }
+    .econ-copy h3 { font: 400 1.7rem/1.2 var(--serif); color: var(--green); margin-bottom: .8rem; }
+    .labels { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1.6rem 0; }
+    .labels span { border: 1px solid rgba(53,71,61,.32); border-radius: 999px; padding: .33rem .72rem; color: var(--green); font: .6rem var(--mono); letter-spacing: .03em; }
+    .strengths { display: grid; grid-template-columns: repeat(3,1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); margin-top: 3rem; }
+    .strength { padding: 1.5rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); min-height: 170px; }
+    .strength-num { color: var(--wine); font: .6rem var(--mono); letter-spacing: .1em; }
+    .strength h3 { font: 1.45rem var(--serif); margin: .7rem 0 .5rem; }
+    .strength p { font: .84rem/1.7 var(--serif); color: var(--muted); margin: 0; }
+    .honor { margin-top: 1.6rem; display: inline-flex; align-items: baseline; gap: .8rem; border-bottom: 1px solid var(--wine); padding: 0 0 .5rem; }
+    .honor b { color: var(--wine); font: 500 1.15rem var(--serif); }
+    .honor span { color: var(--muted); font: .62rem var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+    .closing { padding: clamp(4.5rem, 9vw, 8rem) 0; background: var(--wine-dark); color: var(--paper); position: relative; overflow: hidden; }
+    .closing:after { content: "?"; position: absolute; right: 9%; top: -10rem; color: rgba(244,239,229,.06); font: 36rem/1 var(--serif); }
+    .closing-inner { position: relative; z-index: 1; display: grid; grid-template-columns: .7fr 1.3fr; gap: 3rem; }
+    .closing .kicker { color: #d7b8a9; }
+    .closing h2 { font-size: clamp(2.8rem, 5.5vw, 5.2rem); max-width: 780px; }
+    .closing-copy { max-width: 620px; margin: 1.5rem 0 0; color: #e9dcd0; font: 1.06rem/1.85 var(--serif); }
+    details { margin-top: 2rem; border-top: 1px solid rgba(244,239,229,.3); padding-top: 1rem; max-width: 700px; }
+    summary { cursor: pointer; color: #f3e7d8; font: .67rem var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+    .statement { color: #e7dace; font: .92rem/1.9 var(--serif); padding: 1.25rem 0 .5rem; }
+    .statement p { margin-bottom: 1.3rem; }
+    .footer { background: #211e1c; color: #c9bfb2; padding: 1.4rem 0; font: .58rem var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+    .footer-row { display: flex; justify-content: space-between; gap: 1rem; }
+    .footer a { color: inherit; text-decoration: none; }
+    .footer a:hover { color: white; }
+    @media (max-width: 760px) {
+      .page { width: min(100% - 2rem, var(--page)); }
+      .nav { align-items: flex-start; padding: .8rem 0; }
+      .navlinks { justify-content: flex-end; flex-wrap: wrap; gap: .45rem .9rem; }
+      .navlinks a { font-size: .61rem; }
+      .wordmark { margin-top: .2rem; }
+      .hero-grid, .story-grid, .reading, .econ-layout, .closing-inner { grid-template-columns: 1fr; }
+      .hero { padding-top: 4rem; }
+      .scene { min-height: 270px; max-width: 540px; margin: 0 auto; width: 100%; }
+      .hero-bottom { margin-top: 3rem; }
+      .section-head { grid-template-columns: 1fr; gap: .4rem; margin-bottom: 1.6rem; }
+      .films-intro, .econ-lead { margin-left: 0; }
+      .film-grid { grid-template-columns: 1fr; }
+      .film-image { min-height: 220px; }
+      .econ-diagram { max-width: 470px; width: 100%; margin: auto; gap: 1.8rem 2rem; }
+      .node { width: 112px; height: 112px; }
+      .strengths { grid-template-columns: 1fr; }
+      .strength { min-height: 0; }
+      .closing-inner { gap: 1.2rem; }
+      .footer-row { flex-direction: column; }
+    }
+    @media (max-width: 420px) {
+      .nav { display: block; }
+      .navlinks { justify-content: flex-start; margin-top: .55rem; }
+      h1 { font-size: 3.4rem; }
+      .scene { min-height: 240px; }
+      .car:after { box-shadow: 128px 0 0 -2px #181817, 128px 0 0 0 #8f8170; }
+      .econ-diagram { gap: 1rem; padding: 0; }
+      .node { width: 98px; height: 98px; font-size: .7rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav page" aria-label="Main navigation">
+      <a class="wordmark" href="#top">Myriam Akkari</a>
+      <div class="navlinks">
+        <a href="#beginning">My story</a><a href="#reading">Literature</a><a href="#cinema">Cinema</a><a href="#economics">Economics</a><a href="#future">Future</a>
+      </div>
+    </nav>
+  </header>
+  <main id="top">
+    <div class="hero page">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Myriam Akkari · 12C · Personal statement</div>
+          <h1>A mind<br>that keeps<br><em>asking.</em></h1>
+          <p class="hero-deck">I am drawn to the questions beneath the surface: who gets to shape a story, why people make the choices they do, and how those choices change the lives around them.</p>
+          <p class="hero-note">“The questions that began on an ordinary summer afternoon have stayed with me ever since.”</p>
+        </div>
+        <div class="scene" role="img" aria-label="An editorial illustration of a luxury car and three street sellers in traffic, separated by only a few metres">
+          <span class="scene-label">Lebanon · A moment in traffic</span>
+          <div class="road"><div class="car"></div><div class="figures"><span class="figure"><i class="water"></i></span><span class="figure"><i class="gum"></i></span><span class="figure"></span></div><div class="road-line"></div></div>
+          <span class="caption">Two realities. One road. One question.</span>
+        </div>
+      </div>
+      <div class="hero-bottom"><span>Curiosity, followed across disciplines</span><span class="scroll-cue">Read the story</span></div>
+    </div>
+
+    <section id="beginning" class="page">
+      <div class="section-head"><span class="section-no">01 / THE BEGINNING</span><h2>One ordinary drive.<br>A question I kept.</h2></div>
+      <div class="story-grid">
+        <div class="body-copy">
+          <p>Stuck in traffic in Lebanon, I was mesmerized by a spotless Lamborghini. On my other side, three children were selling gum and water, asking people to buy from them. The contrast was difficult to ignore: two drastically different realities, just metres apart.</p>
+          <p>I kept wondering how one country could be so divided, and why some people struggled to meet basic needs while others lived with so much. Those questions widened into curiosity about businesses and government decisions. In ninth grade, I discovered that they all belonged to a field called <strong>economics</strong>.</p>
+        </div>
+        <aside>
+          <div class="pullquote">“How could two drastically different realities exist just metres apart?”</div>
+          <div class="marginalia">A question about inequality became a way of looking at the world: observe, question, investigate.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="reading" class="page">
+      <div class="section-head"><span class="section-no">02 / BETWEEN THE LINES</span><h2>I read for what<br>the narrator leaves out.</h2></div>
+      <div class="reading">
+        <div>
+          <span class="kicker">A book that changed how I read</span>
+          <div class="book-title">The Secret History</div>
+          <div class="book-meta">Donna Tartt · Fiction</div>
+          <div class="annotation">margin note: whose version are we hearing?</div>
+        </div>
+        <div class="reading-copy">
+          <p>Through Richard Papen’s eyes, the people around him can seem almost mythic. But he is an unreliable narrator: he romanticizes, distorts, and tells events in a way that can make his choices easier to justify.</p>
+          <p>Reading him made me ask whether a story is the truth, or the version of it someone wants me to believe. I became fascinated by how the same person or event changes when the perspective changes. That habit of looking past the first account has followed me from books into films—and into the way I study economics.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cinema" class="page">
+      <div class="section-head"><span class="section-no">03 / FRAME BY FRAME</span><h2>Stories change<br>when you look again.</h2></div>
+      <p class="films-intro">I rewatch scenes, notice details I missed, and look for interpretations that unsettle my first reading. These two films stay with me for different reasons—and show how I think.</p>
+      <div class="film-grid">
+        <article class="film-card">
+          <div class="film-image parasite" role="img" aria-label="Abstract film frame of split-level architecture and a glowing window, suggesting class divisions">
+            <span class="frame-index">A study in distance · 01</span><span class="stairs"></span><span class="light-window"></span><span class="film-frame"></span><span class="film-caption">Near each other · far apart</span>
+          </div>
+          <h3 class="film-title">Parasite</h3><div class="film-year">Bong Joon-ho · 2019</div>
+          <p class="film-copy">Its spaces make class visible. People can occupy the same city and still move through entirely different worlds. I connect that sharp distance to the scene in Lebanon that first made me question inequality—and to economics’ power to examine how resources and opportunities are distributed.</p>
+          <div class="film-link">A question of structure, not just circumstance.</div>
+        </article>
+        <article class="film-card">
+          <div class="film-image aftersun" role="img" aria-label="Abstract film frame with a hazy sun over a quiet horizon, suggesting memory and reinterpretation">
+            <span class="frame-index">A study in memory · 02</span><span class="sun"></span><span class="horizon"></span><span class="film-frame"></span><span class="film-caption">What changes when we remember?</span>
+          </div>
+          <h3 class="film-title">Aftersun</h3><div class="film-year">Charlotte Wells · 2022</div>
+          <p class="film-copy">The film’s quiet details and shifting perspective made me think about memory: how our understanding of someone or an event can change when we revisit it. That feeling echoes the questions I ask while reading Richard Papen—what was shown, what was missed, and what does the telling itself reveal?</p>
+          <div class="film-link">Meaning often gathers in what is left unsaid.</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="economics" class="economics">
+      <div class="page">
+        <div class="section-head"><span class="section-no">04 / THE LENS</span><h2>Economics gives<br>my questions a framework.</h2></div>
+        <p class="econ-lead">I want to understand how individual choices, business decisions, and public policy connect—and why the same outcome can help one group while harming another.</p>
+        <div class="econ-layout">
+          <div class="econ-diagram" role="img" aria-label="Diagram connecting households, firms, government policy, and people's lives">
+            <svg class="diagram-lines" viewBox="0 0 500 330" aria-hidden="true"><path d="M130 92 C215 55 286 55 369 92 M130 230 C215 270 286 270 369 230 M130 98 C115 150 115 177 130 225 M370 98 C386 150 386 177 370 225 M150 110 C220 170 280 198 350 220 M350 110 C280 170 220 198 150 220"/></svg>
+            <div class="node household">Households<small>choices & needs</small></div>
+            <div class="node">Firms<small>production & demand</small></div>
+            <div class="node">Policy<small>rules & trade-offs</small></div>
+            <div class="node household">People’s lives<small>costs & opportunity</small></div>
+          </div>
+          <div class="econ-copy">
+            <h3>From observation to analysis</h3>
+            <p>I enjoy asking why people, businesses, and governments make the decisions they do. Economics lets me examine the reasons behind those choices, test how different explanations fit the evidence, and consider their effects on people.</p>
+            <p>My interest reaches from inequality to consumer behaviour, competition, and the way policy shapes everyday outcomes. I want to study these connections with care, knowing that numbers describe people’s lives as well as markets.</p>
+            <div class="labels"><span>inequality</span><span>consumer behaviour</span><span>business decisions</span><span>public policy</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="future" class="page">
+      <div class="section-head"><span class="section-no">05 / WHAT I BRING</span><h2>Curious by instinct.<br>Careful by practice.</h2></div>
+      <div class="body-copy"><p>Literature taught me to question a narrator. Cinema taught me to look again. Economics gives me tools to investigate the choices and structures behind what I see. Across all three, I have learned to consider perspectives beyond my own before forming an opinion.</p></div>
+      <div class="strengths">
+        <article class="strength"><span class="strength-num">01 — ANALYTICAL</span><h3>I look for causes.</h3><p>I want to understand not only what happened, but the decisions and conditions that produced it.</p></article>
+        <article class="strength"><span class="strength-num">02 — OPEN-MINDED</span><h3>I test perspectives.</h3><p>I consider how the same evidence, character, or outcome can look different from another point of view.</p></article>
+        <article class="strength"><span class="strength-num">03 — CURIOUS</span><h3>I keep asking.</h3><p>My questions move across stories, people, markets, and policies—and keep leading me somewhere new.</p></article>
+      </div>
+      <div class="honor"><b>Academic distinction</b><span>Grade 11 · Term 2</span></div>
+    </section>
+
+    <section id="next" class="closing">
+      <div class="page closing-inner">
+        <div><span class="kicker">The next chapter</span></div>
+        <div>
+          <h2>I hope to study economics—and use what I learn with purpose.</h2>
+          <p class="closing-copy">At university, I want to deepen my understanding of how economies work and how decisions shape people’s circumstances. In the future, I hope to contribute through a career where that understanding can make a meaningful difference, even in a modest way.</p>
+          <details>
+            <summary>Read the full personal statement</summary>
+            <div class="statement">
+              <p>Stuck in traffic, I was mesmerized by the spotless Lamborghini, driven by the beautiful blonde to my right. On my left, I was approached by three street children selling gum and water, desperately asking people to buy from them. The sight struck me. For the remainder of the trip, I couldn’t stop thinking about that moment. The contrast was very difficult to ignore. How could one country be so starkly divided? How could two drastically different realities exist just meters apart? Why were these children left struggling to meet their basic needs? Over time, my questions grew beyond wealth inequality. I became curious about how businesses operated and why governments made certain decisions, only to discover in ninth grade that these questions all belonged to a field called economics.</p>
+              <p>By nature, I tend to question everything around me, be it ideas, concepts, people, trends or events. This tendency was further nurtured by Donna Tartt’s <em>The Secret History</em>. Told through the eyes of Richard Papen, an unreliable narrator who romanticizes the people and atmosphere around him and distorts certain events in an attempt to justify his actions, I began to question whether what I was reading was the truth or simply the version of it he wanted the reader to believe. I became fascinated by how the same character, event, or idea could be interpreted differently based on who was analyzing it. This fascination soon extended beyond literature and into film, where I found myself rewatching scenes, noticing details and symbolism I had originally overlooked, and seeking out analyses that challenged my own interpretations. In turn, I became more open-minded, learning to consider every perspective beyond my own before forming an opinion. This way of thinking only deepened my interest in economics, a subject that gave me the opportunity to question why individuals, businesses, and governments make the decisions they do. It has also strengthened my approach to the subject, particularly when examining the reasons behind and the effects of economic policies and decisions. I take pleasure in considering why economists may interpret the same data differently and how an outcome that benefits one party may have drastically different consequences for another.</p>
+              <p>Although the sight of a Lamborghini juxtaposed with children begging no longer jolts me as it once did on that summer day, the fact that such a reality continues to exist in my home country and countless other developing nations remains unfathomable to me. I may have grown accustomed to witnessing such disparities, but I have never stopped questioning why they exist. I hope to pursue economics at university not only to better understand the world around me, but also to someday put that understanding to use in a career where the decisions I make can have a meaningful impact on the lives of others. Perhaps one day, I will be able to play even a modest role in changing the circumstances that once seemed so difficult for me to comprehend. The questions that began on an ordinary summer afternoon have stayed with me ever since, and I hope they will continue to guide the way I understand the world.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="page footer-row"><span>Myriam Akkari · 12C · Economics</span><a href="#top">Return to the beginning ↑</a><span>Prepared for university admissions readers</span></div></footer>
+</body>
+</html>
