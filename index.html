@@ -81,6 +81,23 @@
     .reading-copy { position: relative; z-index: 1; font: 1.02rem/1.8 var(--serif); color: #f1e8dc; max-width: 650px; }
     .reading-copy p:last-child { margin-bottom: 0; }
     .annotation { margin-top: 1.7rem; font: italic .83rem var(--serif); color: #cfb29d; transform: rotate(-1.5deg); }
+    .reading-range { display: grid; grid-template-columns: repeat(4,1fr); border: 1px solid var(--line); border-right: 0; margin-top: 1.1rem; }
+    .reading-path { padding: 1.3rem; border-right: 1px solid var(--line); background: rgba(255,255,255,.18); }
+    .reading-path span { color: var(--wine); font: .58rem var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+    .reading-path h3 { margin: .65rem 0 .55rem; font: 1.22rem/1.15 var(--serif); }
+    .reading-path p { margin: 0; color: #514a42; font: .84rem/1.7 var(--serif); }
+    .challengers { background: linear-gradient(150deg,#d8c6a8 0 36%,#486054 37% 100%); }
+    .challengers .court { position:absolute; inset:18% 13%; border:2px solid rgba(244,239,229,.8); background:linear-gradient(90deg,transparent 49.5%,rgba(244,239,229,.75) 50%,transparent 50.5%),linear-gradient(0deg,transparent 49.5%,rgba(244,239,229,.75) 50%,transparent 50.5%); transform:perspective(240px) rotateX(8deg); }
+    .challengers .ball { position:absolute; width:25px; height:25px; border-radius:50%; background:#d5d879; left:63%; top:42%; box-shadow:0 0 20px rgba(213,216,121,.45); }
+    .little-women { background:linear-gradient(145deg,#6b594c,#c8a77d 55%,#35473d); }
+    .little-women .window { position:absolute; top:18%; left:35%; width:30%; height:55%; border:2px solid rgba(244,239,229,.75); background:linear-gradient(180deg,rgba(238,199,142,.5),rgba(244,239,229,.08)); box-shadow:0 0 42px rgba(238,199,142,.28); }
+    .little-women .book { position:absolute; width:58%; height:13%; left:21%; bottom:20%; background:#712f3d; border:1px solid #e9d9c6; transform:rotate(-4deg); box-shadow:0 8px 20px rgba(0,0,0,.25); }
+    .midsommar { background:radial-gradient(circle at 50% 46%,#ebdba7 0 8%,transparent 9%),linear-gradient(180deg,#d8d4b1,#83917a); }
+    .midsommar .flower { position:absolute; left:50%; top:47%; width:13px; height:13px; border-radius:50%; background:#f4efe5; box-shadow:0 -23px 0 -2px #f4efe5,0 23px 0 -2px #f4efe5,23px 0 0 -2px #f4efe5,-23px 0 0 -2px #f4efe5,16px 16px 0 -2px #f4efe5,-16px -16px 0 -2px #f4efe5,16px -16px 0 -2px #f4efe5,-16px 16px 0 -2px #f4efe5; }
+    .scream { background:linear-gradient(145deg,#171c20,#39443e 55%,#151718); }
+    .scream .moon { position:absolute; top:22%; right:22%; width:75px; height:75px; border-radius:50%; background:#d7d1c0; box-shadow:0 0 35px rgba(215,209,192,.25); }
+    .scream .shadow { position:absolute; bottom:16%; left:20%; width:27%; height:48%; background:#121414; clip-path:polygon(40% 0,60% 0,70% 20%,100% 100%,0 100%,30% 20%); }
+
     .films-intro { max-width: 670px; color: var(--muted); font: 1.06rem/1.75 var(--serif); margin: 0 0 2.5rem 150px; }
     .film-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
     .film-card { border: 1px solid var(--line); background: rgba(255,255,255,.18); padding: 1rem; }
@@ -121,6 +138,18 @@
     .honor { margin-top: 1.6rem; display: inline-flex; align-items: baseline; gap: .8rem; border-bottom: 1px solid var(--wine); padding: 0 0 .5rem; }
     .honor b { color: var(--wine); font: 500 1.15rem var(--serif); }
     .honor span { color: var(--muted); font: .62rem var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+    .experience { background: rgba(255,255,255,.15); }
+    .experience-lead { max-width: 720px; margin: 0 0 2.5rem 150px; color: #49433d; font: 1.08rem/1.8 var(--serif); }
+    .proof-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.15rem; }
+    .proof-card { border: 1px solid var(--line); background: rgba(255,255,255,.28); display: flex; flex-direction: column; min-width: 0; }
+    .proof-art { min-height: 190px; display: grid; place-items: center; overflow: hidden; background: var(--paper-deep); }
+    .proof-art svg { display: block; width: 100%; height: 190px; }
+    .proof-copy { padding: 1.35rem; }
+    .proof-index { color: var(--wine); font: .59rem var(--mono); letter-spacing: .11em; text-transform: uppercase; }
+    .proof-copy h3 { margin: .65rem 0 .6rem; font: 1.55rem/1.1 var(--serif); }
+    .proof-copy p { margin: 0; color: #514a42; font: .9rem/1.75 var(--serif); }
+    .proof-strength { display: inline-flex; align-self: flex-start; margin: 1rem 1.35rem 1.35rem; padding-top: .55rem; border-top: 1px solid var(--line); color: var(--green); font: .58rem var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+    .proof-note { margin: 1.6rem 0 0; color: var(--muted); font: .7rem/1.65 var(--mono); letter-spacing: .04em; }
     .closing { padding: clamp(4.5rem, 9vw, 8rem) 0; background: var(--wine-dark); color: var(--paper); position: relative; overflow: hidden; }
     .closing:after { content: "?"; position: absolute; right: 9%; top: -10rem; color: rgba(244,239,229,.06); font: 36rem/1 var(--serif); }
     .closing-inner { position: relative; z-index: 1; display: grid; grid-template-columns: .7fr 1.3fr; gap: 3rem; }
@@ -147,16 +176,21 @@
       .hero-bottom { margin-top: 3rem; }
       .section-head { grid-template-columns: 1fr; gap: .4rem; margin-bottom: 1.6rem; }
       .films-intro, .econ-lead { margin-left: 0; }
+      .reading-range { grid-template-columns: 1fr 1fr; }
       .film-grid { grid-template-columns: 1fr; }
       .film-image { min-height: 220px; }
       .econ-diagram { max-width: 470px; width: 100%; margin: auto; gap: 1.8rem 2rem; }
       .node { width: 112px; height: 112px; }
       .strengths { grid-template-columns: 1fr; }
       .strength { min-height: 0; }
+      .experience-lead { margin-left: 0; }
+      .proof-grid { grid-template-columns: 1fr; }
+      .proof-art, .proof-art svg { min-height: 170px; height: 170px; }
       .closing-inner { gap: 1.2rem; }
       .footer-row { flex-direction: column; }
     }
     @media (max-width: 420px) {
+      .reading-range { grid-template-columns: 1fr; }
       .nav { display: block; }
       .navlinks { justify-content: flex-start; margin-top: .55rem; }
       h1 { font-size: 3.4rem; }
@@ -173,7 +207,7 @@
     <nav class="nav page" aria-label="Main navigation">
       <a class="wordmark" href="#top">Myriam Akkari</a>
       <div class="navlinks">
-        <a href="#beginning">My story</a><a href="#reading">Literature</a><a href="#cinema">Cinema</a><a href="#economics">Economics</a><a href="#future">Future</a>
+        <a href="#beginning">My story</a><a href="#reading">Literature</a><a href="#cinema">Cinema</a><a href="#economics">Economics</a><a href="#future">Future</a><a href="#experience">Highlights</a>
       </div>
     </nav>
   </header>
@@ -223,27 +257,47 @@
           <p>Reading him made me ask whether a story is the truth, or the version of it someone wants me to believe. I became fascinated by how the same person or event changes when the perspective changes. That habit of looking past the first account has followed me from books into films—and into the way I study economics.</p>
         </div>
       </div>
+      <div class="reading-range" aria-label="The kinds of stories I read">
+        <article class="reading-path"><span>01 / CLASSICS &amp; LITERARY FICTION</span><h3>Character, voice, and perspective</h3><p>I like books that leave room to question a character’s version of events and notice how a different perspective changes the story.</p></article>
+        <article class="reading-path"><span>02 / THRILLERS</span><h3>Clues that change the picture</h3><p>I enjoy following details, forming a theory, and discovering how a new clue can make me rethink what I believed earlier.</p></article>
+        <article class="reading-path"><span>03 / FANTASY &amp; FAN FICTION</span><h3>Stories with room to wander</h3><p>Imagined worlds and fan fiction let me return to characters I care about and explore how a different choice could lead somewhere new.</p></article>
+        <article class="reading-path"><span>04 / ALWAYS READING</span><h3>More than one kind of book</h3><p>I move between genres because each asks me to think differently—about motive, memory, identity, and the way stories are told.</p></article>
+      </div>
     </section>
 
     <section id="cinema" class="page">
-      <div class="section-head"><span class="section-no">03 / FRAME BY FRAME</span><h2>Stories change<br>when you look again.</h2></div>
-      <p class="films-intro">I rewatch scenes, notice details I missed, and look for interpretations that unsettle my first reading. These two films stay with me for different reasons—and show how I think.</p>
+      <div class="section-head"><span class="section-no">03 / FRAME BY FRAME</span><h2>I watch for what a story makes me reconsider.</h2></div>
+      <p class="films-intro">I’m drawn to films across genres. I revisit scenes, notice details I missed, and look for interpretations that challenge my first reaction. A few favorites show the different questions I like to follow.</p>
       <div class="film-grid">
         <article class="film-card">
-          <div class="film-image parasite" role="img" aria-label="Abstract film frame of split-level architecture and a glowing window, suggesting class divisions">
-            <span class="frame-index">A study in distance · 01</span><span class="stairs"></span><span class="light-window"></span><span class="film-frame"></span><span class="film-caption">Near each other · far apart</span>
-          </div>
+          <div class="film-image parasite" role="img" aria-label="Abstract film frame of split-level architecture and a glowing window, suggesting class divisions"><span class="frame-index">A study in distance · 01</span><span class="stairs"></span><span class="light-window"></span><span class="film-frame"></span><span class="film-caption">Near each other · far apart</span></div>
           <h3 class="film-title">Parasite</h3><div class="film-year">Bong Joon-ho · 2019</div>
-          <p class="film-copy">Its spaces make class visible. People can occupy the same city and still move through entirely different worlds. I connect that sharp distance to the scene in Lebanon that first made me question inequality—and to economics’ power to examine how resources and opportunities are distributed.</p>
-          <div class="film-link">A question of structure, not just circumstance.</div>
+          <p class="film-copy">Its spaces make class visible. People can occupy the same city and still move through entirely different worlds. I connect that sharp distance to the scene in Lebanon that first made me question inequality.</p><div class="film-link">A question of structure and opportunity.</div>
         </article>
         <article class="film-card">
-          <div class="film-image aftersun" role="img" aria-label="Abstract film frame with a hazy sun over a quiet horizon, suggesting memory and reinterpretation">
-            <span class="frame-index">A study in memory · 02</span><span class="sun"></span><span class="horizon"></span><span class="film-frame"></span><span class="film-caption">What changes when we remember?</span>
-          </div>
+          <div class="film-image aftersun" role="img" aria-label="Abstract film frame with a hazy sun over a quiet horizon, suggesting memory and reinterpretation"><span class="frame-index">A study in memory · 02</span><span class="sun"></span><span class="horizon"></span><span class="film-frame"></span><span class="film-caption">What changes when we remember?</span></div>
           <h3 class="film-title">Aftersun</h3><div class="film-year">Charlotte Wells · 2022</div>
-          <p class="film-copy">The film’s quiet details and shifting perspective made me think about memory: how our understanding of someone or an event can change when we revisit it. That feeling echoes the questions I ask while reading Richard Papen—what was shown, what was missed, and what does the telling itself reveal?</p>
-          <div class="film-link">Meaning often gathers in what is left unsaid.</div>
+          <p class="film-copy">Quiet details and shifting perspective made me think about memory: our understanding of someone can change when we revisit a moment. I like how the film invites a second reading without spelling everything out.</p><div class="film-link">Meaning can gather in what is left unsaid.</div>
+        </article>
+        <article class="film-card">
+          <div class="film-image challengers" role="img" aria-label="Abstract tennis court with a bright ball, representing rivalry and competition"><span class="frame-index">A study in rivalry · 03</span><span class="court"></span><span class="ball"></span><span class="film-frame"></span><span class="film-caption">Every point changes the balance</span></div>
+          <h3 class="film-title">Challengers</h3><div class="film-year">Luca Guadagnino · 2024</div>
+          <p class="film-copy">The shifting timeline keeps changing how I read the relationships. I’m interested in how competition can become a way characters communicate ambition, loyalty, and unresolved history.</p><div class="film-link">A match can reveal more than a winner.</div>
+        </article>
+        <article class="film-card">
+          <div class="film-image little-women" role="img" aria-label="Abstract warm-lit window and book suggesting family, writing, and imagined futures"><span class="frame-index">A study in becoming · 04</span><span class="window"></span><span class="book"></span><span class="film-frame"></span><span class="film-caption">Different lives, equally imagined</span></div>
+          <h3 class="film-title">Little Women</h3><div class="film-year">Greta Gerwig · 2019</div>
+          <p class="film-copy">I’m drawn to how the sisters imagine different futures. Their choices make me think about ambition, family, and the pressure to fit a life into someone else’s expectations.</p><div class="film-link">A story can hold more than one definition of success.</div>
+        </article>
+        <article class="film-card">
+          <div class="film-image midsommar" role="img" aria-label="Abstract flower against a bright pastoral background, suggesting beauty and unease"><span class="frame-index">A study in atmosphere · 05</span><span class="flower"></span><span class="film-frame"></span><span class="film-caption">When beauty feels unsettling</span></div>
+          <h3 class="film-title">Midsommar</h3><div class="film-year">Ari Aster · 2019</div>
+          <p class="film-copy">Its bright setting unsettles the usual visual language of horror. I notice how colour, ceremony, and silence can make a scene feel beautiful and disturbing at once.</p><div class="film-link">A change in atmosphere changes what we see.</div>
+        </article>
+        <article class="film-card">
+          <div class="film-image scream" role="img" aria-label="Abstract night scene with moonlight and a shadow, suggesting suspense and horror"><span class="frame-index">A study in expectation · 06</span><span class="moon"></span><span class="shadow"></span><span class="film-frame"></span><span class="film-caption">Knowing the rules can change them</span></div>
+          <h3 class="film-title">Scream</h3><div class="film-year">Wes Craven · 1996</div>
+          <p class="film-copy">I like how it plays with horror conventions while still building suspense. It makes me pay attention to the rules a story sets up—and to the moments it chooses to break them.</p><div class="film-link">Genre can be a clue as well as a framework.</div>
         </article>
       </div>
     </section>
@@ -279,6 +333,71 @@
         <article class="strength"><span class="strength-num">03 — CURIOUS</span><h3>I keep asking.</h3><p>My questions move across stories, people, markets, and policies—and keep leading me somewhere new.</p></article>
       </div>
       <div class="honor"><b>Academic distinction</b><span>Grade 11 · Term 2</span></div>
+    </section>
+
+    <section id="experience" class="experience">
+      <div class="page">
+        <div class="section-head"><span class="section-no">06 / STRENGTHS &amp; ACCOMPLISHMENTS</span><h2>Strengths &amp; accomplishments.</h2></div>
+        <p class="experience-lead">A few ways my effort, curiosity, and interests show up—in school, in what I choose to learn, and in how I think about the world.</p>
+        <div class="proof-grid">
+          <article class="proof-card">
+            <div class="proof-art" role="img" aria-label="A notebook and academic distinction ribbon">
+              <svg viewBox="0 0 360 190" aria-hidden="true">
+                <rect width="360" height="190" fill="#e9e0d1"/><rect x="48" y="27" width="264" height="136" fill="#f4efe5" stroke="#35473d"/><path d="M72 61h126M72 78h104M72 95h115" stroke="#9c8d7b" stroke-width="2"/><circle cx="258" cy="78" r="31" fill="#d9c5a7" stroke="#712f3d" stroke-width="2"/><path d="m243 105-8 45 23-12 19 12-8-45" fill="#712f3d"/><path d="m258 58 6 12 13 2-9 9 2 13-12-6-12 6 2-13-9-9 13-2z" fill="#f4efe5"/>
+                <text x="22" y="22" fill="#6f675f" font-size="10" font-family="Courier New" letter-spacing="2">EFFORT · LEARNING · GROWTH</text>
+              </svg>
+            </div>
+            <div class="proof-copy"><span class="proof-index">01 / ACADEMIC ACHIEVEMENT</span><h3>Effort reflected in my results.</h3><p>I received a distinction for my overall grades. In Economics specifically, I earned 100% at the end of Grade 11. Both reflect the effort I put into my studies.</p></div>
+            <span class="proof-strength">Ambition · commitment</span>
+          </article>
+          <article class="proof-card">
+            <div class="proof-art" role="img" aria-label="Illustration of steps rising toward a star, representing steady effort">
+              <svg viewBox="0 0 360 190" aria-hidden="true">
+                <rect width="360" height="190" fill="#e9e0d1"/><path d="M54 151h67v-29h59V92h59V62h67" fill="none" stroke="#712f3d" stroke-width="4"/><path d="M75 151v-26h46m13-3V92h46m13-3V62h46" fill="none" stroke="#35473d" stroke-width="2"/><path d="m294 35 5 11 12 1-9 8 3 12-11-6-10 6 2-12-9-8 12-1z" fill="#d9c5a7" stroke="#712f3d" stroke-width="2"/><text x="22" y="29" fill="#6f675f" font-size="10" font-family="Courier New" letter-spacing="2">EFFORT · REFLECTION · TRY AGAIN</text>
+              </svg>
+            </div>
+            <div class="proof-copy"><span class="proof-index">02 / RESILIENCE</span><h3>I keep working to improve.</h3><p>When I don’t reach my own expectations, I put in more effort and try again. I want to learn from each result and keep getting better.</p></div>
+            <span class="proof-strength">Determination · self-discipline</span>
+          </article>
+          <article class="proof-card">
+            <div class="proof-art" role="img" aria-label="Open book beside a small word puzzle grid">
+              <svg viewBox="0 0 360 190" aria-hidden="true">
+                <rect width="360" height="190" fill="#e9e0d1"/><path d="M30 134q46-14 91 0V62q-45-15-91 0zm91 0q46-14 91 0V62q-45-15-91 0z" fill="#f4efe5" stroke="#35473d" stroke-width="2"/><path d="M44 82q28-7 60 0m-60 14q28-7 60 0m-60 14q28-7 60 0m31-28q28-7 60 0m-60 14q28-7 60 0m-60 14q28-7 60 0" stroke="#9c8d7b" stroke-width="2"/><g transform="translate(239 57)"><rect width="25" height="25" fill="#35473d"/><rect x="31" width="25" height="25" fill="#d9c5a7"/><rect x="62" width="25" height="25" fill="#712f3d"/><rect y="31" width="25" height="25" fill="#d9c5a7"/><rect x="31" y="31" width="25" height="25" fill="#35473d"/><rect x="62" y="31" width="25" height="25" fill="#d9c5a7"/><rect y="62" width="25" height="25" fill="#712f3d"/><rect x="31" y="62" width="25" height="25" fill="#d9c5a7"/><rect x="62" y="62" width="25" height="25" fill="#35473d"/></g><text x="22" y="29" fill="#6f675f" font-size="10" font-family="Courier New" letter-spacing="2">READ · NOTICE · SOLVE</text>
+              </svg>
+            </div>
+            <div class="proof-copy"><span class="proof-index">03 / INTELLECTUAL CURIOSITY</span><h3>An active, questioning mind.</h3><p>I move between classics, literary fiction, thrillers, fantasy, and fan fiction. I enjoy noticing how a new perspective or clue changes a story. Wordle, Sudoku, and other puzzles keep me looking for patterns and testing ideas.</p></div>
+            <span class="proof-strength">Curiosity · analytical thinking</span>
+          </article>
+          <article class="proof-card">
+            <div class="proof-art" role="img" aria-label="Illustration of an offshore jack-up rig above the sea">
+              <svg viewBox="0 0 360 190" aria-hidden="true">
+                <rect width="360" height="190" fill="#e9e0d1"/><circle cx="278" cy="42" r="22" fill="#d9c5a7"/><path d="M0 132c41-9 70 8 111 0s70-8 111 0 86 5 138-2v60H0z" fill="#77877c" opacity=".75"/><path d="M0 151c43-7 75 7 119 0s74-7 117 0 79 5 124-1" fill="none" stroke="#f4efe5" stroke-width="2" opacity=".8"/><path d="M86 79h166l-14 15H98z" fill="#712f3d"/><path d="M112 95l-7 74m42-74-2 74m70-74 6 74m31-74 11 74" fill="none" stroke="#35473d" stroke-width="5"/><path d="M157 79 179 29l25 50m-42-34h34m-41 17h48m-27-34v51" fill="none" stroke="#4f202e" stroke-width="4"/><path d="M178 29h20v7h-20m3-7v-9h14v9" fill="#35473d"/><path d="M73 111h190" stroke="#28231f" stroke-width="2" opacity=".55"/><text x="18" y="25" fill="#6f675f" font-size="10" font-family="Courier New" letter-spacing="2">FIELD NOTES · 04</text>
+              </svg>
+            </div>
+            <div class="proof-copy"><span class="proof-index">04 / INTERNSHIP EXPERIENCE</span><h3>Learning through industry.</h3><p>Across my internships, including WILDCAT EOC, I saw professional work up close and explored oil and gas—from its origins to production and jack-up rig systems.</p></div>
+            <span class="proof-strength">Initiative · systems thinking</span>
+          </article>
+          <article class="proof-card">
+            <div class="proof-art" role="img" aria-label="Illustration of hands offering a small plant">
+              <svg viewBox="0 0 360 190" aria-hidden="true">
+                <rect width="360" height="190" fill="#e9e0d1"/><circle cx="180" cy="87" r="55" fill="#d9c5a7" opacity=".7"/><path d="M180 117V72m0 24c-18-1-29-12-29-27 17 0 27 9 29 27zm1-10c2-18 13-28 30-28 0 15-11 27-30 28z" fill="#35473d"/><path d="M180 119c-25 0-42-4-55-14-9-7-17-17-28-20-7-2-12 4-8 11l22 31c12 17 31 25 69 25 38 0 57-8 69-25l22-31c4-7-1-13-8-11-11 3-19 13-28 20-13 10-30 14-55 14z" fill="#712f3d" opacity=".9"/><path d="M127 133c14 6 30 9 53 9s39-3 53-9" fill="none" stroke="#f4efe5" stroke-width="3"/><text x="18" y="25" fill="#6f675f" font-size="10" font-family="Courier New" letter-spacing="2">TIME GIVEN · 05</text>
+              </svg>
+            </div>
+            <div class="proof-copy"><span class="proof-index">05 / SERVICE</span><h3>Showing up for others.</h3><p>I have given many hours to volunteering. It has strengthened my sense of responsibility and shown me how much steady effort can matter.</p></div>
+            <span class="proof-strength">Commitment · care</span>
+          </article>
+          <article class="proof-card">
+            <div class="proof-art" role="img" aria-label="Illustration of a film frame and globe, connecting cinema with world events">
+              <svg viewBox="0 0 360 190" aria-hidden="true">
+                <rect width="360" height="190" fill="#e9e0d1"/><rect x="27" y="37" width="174" height="116" rx="2" fill="#35473d"/><rect x="38" y="48" width="152" height="94" fill="#712f3d"/><circle cx="111" cy="95" r="31" fill="#d9c5a7"/><path d="M80 95h62M111 64c15 17 15 45 0 62m0-62c-15 17-15 45 0 62M86 77h50m-50 36h50" fill="none" stroke="#35473d" stroke-width="2"/><path d="M44 37v116m142-116v116" stroke="#f4efe5" stroke-width="4" stroke-dasharray="5 7"/><path d="M226 70h106v76H226z" fill="#f4efe5" stroke="#35473d" stroke-width="2"/><path d="m244 127 20-24 16 15 15-19 19 28" fill="none" stroke="#712f3d" stroke-width="3"/><circle cx="253" cy="87" r="7" fill="#d9c5a7"/><text x="22" y="22" fill="#6f675f" font-size="10" font-family="Courier New" letter-spacing="2">FILM · THE WORLD · WHAT'S NEXT</text>
+              </svg>
+            </div>
+            <div class="proof-copy"><span class="proof-index">06 / PERSPECTIVE &amp; FUTURE</span><h3>Looking beyond the frame.</h3><p>I enjoy movies for the way they open up different perspectives, and I like staying informed about what is happening around the world. That curiosity is part of why I hope to study economics and understand the forces shaping people’s lives.</p></div>
+            <span class="proof-strength">Open-mindedness · global curiosity</span>
+          </article>
+        </div>
+        <p class="proof-note">Across school, reading, work, and the wider world, I keep asking questions and looking for ways to learn.</p>
+      </div>
     </section>
 
     <section id="next" class="closing">
