@@ -86,17 +86,9 @@
     .reading-path span { color: var(--wine); font: .58rem var(--mono); letter-spacing: .1em; text-transform: uppercase; }
     .reading-path h3 { margin: .65rem 0 .55rem; font: 1.22rem/1.15 var(--serif); }
     .reading-path p { margin: 0; color: #514a42; font: .84rem/1.7 var(--serif); }
-    .challengers { background: linear-gradient(150deg,#d8c6a8 0 36%,#486054 37% 100%); }
-    .challengers .court { position:absolute; inset:18% 13%; border:2px solid rgba(244,239,229,.8); background:linear-gradient(90deg,transparent 49.5%,rgba(244,239,229,.75) 50%,transparent 50.5%),linear-gradient(0deg,transparent 49.5%,rgba(244,239,229,.75) 50%,transparent 50.5%); transform:perspective(240px) rotateX(8deg); }
-    .challengers .ball { position:absolute; width:25px; height:25px; border-radius:50%; background:#d5d879; left:63%; top:42%; box-shadow:0 0 20px rgba(213,216,121,.45); }
     .little-women { background:linear-gradient(145deg,#6b594c,#c8a77d 55%,#35473d); }
     .little-women .window { position:absolute; top:18%; left:35%; width:30%; height:55%; border:2px solid rgba(244,239,229,.75); background:linear-gradient(180deg,rgba(238,199,142,.5),rgba(244,239,229,.08)); box-shadow:0 0 42px rgba(238,199,142,.28); }
     .little-women .book { position:absolute; width:58%; height:13%; left:21%; bottom:20%; background:#712f3d; border:1px solid #e9d9c6; transform:rotate(-4deg); box-shadow:0 8px 20px rgba(0,0,0,.25); }
-    .midsommar { background:radial-gradient(circle at 50% 46%,#ebdba7 0 8%,transparent 9%),linear-gradient(180deg,#d8d4b1,#83917a); }
-    .midsommar .flower { position:absolute; left:50%; top:47%; width:13px; height:13px; border-radius:50%; background:#f4efe5; box-shadow:0 -23px 0 -2px #f4efe5,0 23px 0 -2px #f4efe5,23px 0 0 -2px #f4efe5,-23px 0 0 -2px #f4efe5,16px 16px 0 -2px #f4efe5,-16px -16px 0 -2px #f4efe5,16px -16px 0 -2px #f4efe5,-16px 16px 0 -2px #f4efe5; }
-    .scream { background:linear-gradient(145deg,#171c20,#39443e 55%,#151718); }
-    .scream .moon { position:absolute; top:22%; right:22%; width:75px; height:75px; border-radius:50%; background:#d7d1c0; box-shadow:0 0 35px rgba(215,209,192,.25); }
-    .scream .shadow { position:absolute; bottom:16%; left:20%; width:27%; height:48%; background:#121414; clip-path:polygon(40% 0,60% 0,70% 20%,100% 100%,0 100%,30% 20%); }
 
     .films-intro { max-width: 670px; color: var(--muted); font: 1.06rem/1.75 var(--serif); margin: 0 0 2.5rem 150px; }
     .film-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
@@ -107,6 +99,15 @@
     .parasite { background: radial-gradient(ellipse at 72% 23%, rgba(205,177,115,.4), transparent 22%), linear-gradient(130deg, #343d36 0 48%, #202823 48%); }
     .parasite .stairs { position: absolute; left: 12%; bottom: 17%; width: 72%; height: 48%; background: repeating-linear-gradient(0deg, #a49271 0 2px, transparent 2px 23px); clip-path: polygon(0 100%, 0 88%, 24% 88%, 24% 69%, 49% 69%, 49% 48%, 74% 48%, 74% 27%, 100% 27%, 100% 100%); opacity: .8; }
     .parasite .light-window { position: absolute; right: 14%; top: 24%; height: 57px; width: 85px; border: 1px solid rgba(244,239,229,.7); background: linear-gradient(135deg, rgba(223,195,136,.42), rgba(244,239,229,.04)); box-shadow: 0 0 28px rgba(223,195,136,.2); }
+    .little-women { background:linear-gradient(145deg,#6b594c,#c8a77d 55%,#35473d); }
+    .little-women .window { position:absolute; top:18%; left:35%; width:30%; height:55%; border:2px solid rgba(244,239,229,.75); background:linear-gradient(180deg,rgba(238,199,142,.5),rgba(244,239,229,.08)); box-shadow:0 0 42px rgba(238,199,142,.28); }
+    .little-women .book { position:absolute; width:58%; height:13%; left:21%; bottom:20%; background:#712f3d; border:1px solid #e9d9c6; transform:rotate(-4deg); box-shadow:0 8px 20px rgba(0,0,0,.25); }
+    .azkaban { background:radial-gradient(ellipse at 72% 24%,rgba(204,204,186,.35),transparent 20%),linear-gradient(145deg,#202b32,#53645f 56%,#25323a); }
+    .azkaban .moon { position:absolute; top:20%; right:22%; width:72px; height:72px; border:1px solid rgba(244,239,229,.7); border-radius:50%; box-shadow:0 0 35px rgba(244,239,229,.18),inset 0 0 15px rgba(244,239,229,.15); }
+    .azkaban .tower { position:absolute; bottom:16%; left:28%; width:25%; height:48%; background:#242b2c; clip-path:polygon(25% 0,75% 0,100% 100%,0 100%); }
+    .azkaban .clock { position:absolute; z-index:1; left:48%; top:44%; width:52px; height:52px; border:2px solid #d9c5a7; border-radius:50%; background:rgba(53,71,61,.8); }
+    .azkaban .clock:before,.azkaban .clock:after { content:""; position:absolute; left:24px; top:9px; width:1px; height:17px; background:#f4efe5; transform-origin:bottom; transform:rotate(0deg); }
+    .azkaban .clock:after { height:13px; top:13px; transform:rotate(125deg); }
     .aftersun { background: radial-gradient(ellipse at 50% 44%, rgba(226,185,126,.7), transparent 23%), linear-gradient(180deg, #4b6162 0 54%, #7d897f 55% 57%, #4d6b6a 58%); }
     .aftersun .sun { position: absolute; width: 100px; height: 100px; border: 1px solid rgba(245,225,193,.6); border-radius: 50%; box-shadow: 0 0 50px rgba(241,204,145,.28), inset 0 0 26px rgba(241,204,145,.2); }
     .aftersun .horizon { position: absolute; height: 1px; left: 0; right: 0; top: 56%; background: rgba(241,232,211,.55); }
@@ -266,38 +267,40 @@
     </section>
 
     <section id="cinema" class="page">
-      <div class="section-head"><span class="section-no">03 / FRAME BY FRAME</span><h2>I watch for what a story makes me reconsider.</h2></div>
-      <p class="films-intro">I’m drawn to films across genres. I revisit scenes, notice details I missed, and look for interpretations that challenge my first reaction. A few favorites show the different questions I like to follow.</p>
+      <div class="section-head"><span class="section-no">03 / FRAME BY FRAME</span><h2>Stories change<br>when you look again.</h2></div>
+      <p class="films-intro">I rewatch scenes, notice details I missed, and look for interpretations that unsettle my first reading. These films stay with me for different reasons—and show how I think.</p>
       <div class="film-grid">
         <article class="film-card">
-          <div class="film-image parasite" role="img" aria-label="Abstract film frame of split-level architecture and a glowing window, suggesting class divisions"><span class="frame-index">A study in distance · 01</span><span class="stairs"></span><span class="light-window"></span><span class="film-frame"></span><span class="film-caption">Near each other · far apart</span></div>
+          <div class="film-image parasite" role="img" aria-label="Abstract film frame of split-level architecture and a glowing window, suggesting class divisions">
+            <span class="frame-index">A study in distance · 01</span><span class="stairs"></span><span class="light-window"></span><span class="film-frame"></span><span class="film-caption">Near each other · far apart</span>
+          </div>
           <h3 class="film-title">Parasite</h3><div class="film-year">Bong Joon-ho · 2019</div>
-          <p class="film-copy">Its spaces make class visible. People can occupy the same city and still move through entirely different worlds. I connect that sharp distance to the scene in Lebanon that first made me question inequality.</p><div class="film-link">A question of structure and opportunity.</div>
+          <p class="film-copy">Its spaces make class visible. People can occupy the same city and still move through entirely different worlds. I connect that sharp distance to the scene in Lebanon that first made me question inequality—and to economics’ power to examine how resources and opportunities are distributed.</p>
+          <div class="film-link">A question of structure, not just circumstance.</div>
         </article>
         <article class="film-card">
-          <div class="film-image aftersun" role="img" aria-label="Abstract film frame with a hazy sun over a quiet horizon, suggesting memory and reinterpretation"><span class="frame-index">A study in memory · 02</span><span class="sun"></span><span class="horizon"></span><span class="film-frame"></span><span class="film-caption">What changes when we remember?</span></div>
+          <div class="film-image aftersun" role="img" aria-label="Abstract film frame with a hazy sun over a quiet horizon, suggesting memory and reinterpretation">
+            <span class="frame-index">A study in memory · 02</span><span class="sun"></span><span class="horizon"></span><span class="film-frame"></span><span class="film-caption">What changes when we remember?</span>
+          </div>
           <h3 class="film-title">Aftersun</h3><div class="film-year">Charlotte Wells · 2022</div>
-          <p class="film-copy">Quiet details and shifting perspective made me think about memory: our understanding of someone can change when we revisit a moment. I like how the film invites a second reading without spelling everything out.</p><div class="film-link">Meaning can gather in what is left unsaid.</div>
+          <p class="film-copy">The film’s quiet details and shifting perspective made me think about memory: how our understanding of someone or an event can change when we revisit it. That feeling echoes the questions I ask while reading Richard Papen—what was shown, what was missed, and what does the telling itself reveal?</p>
+          <div class="film-link">Meaning often gathers in what is left unsaid.</div>
         </article>
         <article class="film-card">
-          <div class="film-image challengers" role="img" aria-label="Abstract tennis court with a bright ball, representing rivalry and competition"><span class="frame-index">A study in rivalry · 03</span><span class="court"></span><span class="ball"></span><span class="film-frame"></span><span class="film-caption">Every point changes the balance</span></div>
-          <h3 class="film-title">Challengers</h3><div class="film-year">Luca Guadagnino · 2024</div>
-          <p class="film-copy">The shifting timeline keeps changing how I read the relationships. I’m interested in how competition can become a way characters communicate ambition, loyalty, and unresolved history.</p><div class="film-link">A match can reveal more than a winner.</div>
-        </article>
-        <article class="film-card">
-          <div class="film-image little-women" role="img" aria-label="Abstract warm-lit window and book suggesting family, writing, and imagined futures"><span class="frame-index">A study in becoming · 04</span><span class="window"></span><span class="book"></span><span class="film-frame"></span><span class="film-caption">Different lives, equally imagined</span></div>
+          <div class="film-image little-women" role="img" aria-label="Abstract warm-lit window and book suggesting family, writing, and imagined futures">
+            <span class="frame-index">A study in becoming · 03</span><span class="window"></span><span class="book"></span><span class="film-frame"></span><span class="film-caption">Different lives, equally imagined</span>
+          </div>
           <h3 class="film-title">Little Women</h3><div class="film-year">Greta Gerwig · 2019</div>
-          <p class="film-copy">I’m drawn to how the sisters imagine different futures. Their choices make me think about ambition, family, and the pressure to fit a life into someone else’s expectations.</p><div class="film-link">A story can hold more than one definition of success.</div>
+          <p class="film-copy">I’m drawn to how the sisters imagine different futures. Their choices make me think about ambition, family, and the pressure to fit a life into someone else’s expectations.</p>
+          <div class="film-link">A story can hold more than one definition of success.</div>
         </article>
         <article class="film-card">
-          <div class="film-image midsommar" role="img" aria-label="Abstract flower against a bright pastoral background, suggesting beauty and unease"><span class="frame-index">A study in atmosphere · 05</span><span class="flower"></span><span class="film-frame"></span><span class="film-caption">When beauty feels unsettling</span></div>
-          <h3 class="film-title">Midsommar</h3><div class="film-year">Ari Aster · 2019</div>
-          <p class="film-copy">Its bright setting unsettles the usual visual language of horror. I notice how colour, ceremony, and silence can make a scene feel beautiful and disturbing at once.</p><div class="film-link">A change in atmosphere changes what we see.</div>
-        </article>
-        <article class="film-card">
-          <div class="film-image scream" role="img" aria-label="Abstract night scene with moonlight and a shadow, suggesting suspense and horror"><span class="frame-index">A study in expectation · 06</span><span class="moon"></span><span class="shadow"></span><span class="film-frame"></span><span class="film-caption">Knowing the rules can change them</span></div>
-          <h3 class="film-title">Scream</h3><div class="film-year">Wes Craven · 1996</div>
-          <p class="film-copy">I like how it plays with horror conventions while still building suspense. It makes me pay attention to the rules a story sets up—and to the moments it chooses to break them.</p><div class="film-link">Genre can be a clue as well as a framework.</div>
+          <div class="film-image azkaban" role="img" aria-label="Abstract night sky, tower, and timepiece inspired by Harry Potter and the Prisoner of Azkaban">
+            <span class="frame-index">A world I return to · 04</span><span class="moon"></span><span class="tower"></span><span class="clock"></span><span class="film-frame"></span><span class="film-caption">Time, friendship, and another chance</span>
+          </div>
+          <h3 class="film-title">Harry Potter and the Prisoner of Azkaban</h3><div class="film-year">Alfonso Cuarón · 2004</div>
+          <p class="film-copy">The Harry Potter films are a world I love returning to, and <em>Prisoner of Azkaban</em> stands out to me. Its atmosphere and time-turning story make small details feel different when the story comes around again.</p>
+          <div class="film-link">A personal favorite for its sense of wonder and possibility.</div>
         </article>
       </div>
     </section>
